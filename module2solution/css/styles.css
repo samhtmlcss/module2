@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+
+h1{text-align: center;}
+
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.first , .second , .third
+{
+    background-color: beige;
+    border: black solid 1px;
+    position: relative;
+}
+
+.row > div
+{
+    padding: 5px;
+}
+
+.title1 , .title2 , .title3
+{
+    border: black solid 1px;
+    width: 100px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+    position: absolute;
+    right: 0px;
+}
+
+.title1{background-color: pink;}
+.title2{background-color: red; color: white;}
+.title3{background-color: sandybrown;}
+
+.content
+{
+    margin-top: 40px;
+    padding: 5px;
+}
+
+@media (min-width : 992px)
+{
+    .row > div
+    {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 991px)
+{
+    .row > div
+    {
+        float: left;
+        width: 50%;
+    }
+    .row > div:nth-child(3)
+    {
+        width: 100%;
+    }
+}
+
+
+
